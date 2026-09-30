@@ -13,3 +13,6 @@ def lista(request):
 def variabili(request):
     context = { 'var1': 10, 'var2' : 'ciao', 'var3' : '123 hello world'}
     return render(request, "variabili.html", context)
+
+def index(request):
+    return render(request, "prima_app/index.html")
