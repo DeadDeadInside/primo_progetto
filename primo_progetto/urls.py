@@ -22,5 +22,5 @@ from primo_progetto.views import index_root
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("prima_app.urls", namespace="prima_app")),
-    path('index_root', index_root, name='index_root')
+    path('', index_root, name='index_root')
 ]

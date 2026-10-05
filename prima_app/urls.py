@@ -8,5 +8,5 @@ urlpatterns = [
     path('lista', lista, name='lista'),
     path('variabili', variabili, name='variabili'),
     path('chisiamo', chisiamo, name='chisiamo'),
-    path('', index, name='index')
+    path('index', index, name='index')
 ]
