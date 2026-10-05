@@ -16,3 +16,6 @@ def variabili(request):
 
 def index(request):
     return render(request, "prima_app/index.html")
+
+def chisiamo(request):
+    return render(request, "prima_app/chisiamo.html")
