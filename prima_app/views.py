@@ -19,3 +19,6 @@ def index(request):
 
 def chisiamo(request):
     return render(request, "prima_app/chisiamo.html")
+
+def welcome(request):
+    return render(request, "prima_app/welcome.html")
