@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index_root</title>
-</head>
-<body>
-    <h1>Ri-benvenuto!</h1>
+{% extends 'base.html'%}
+
+{% block title %} {{ block.super }} | Indice {% endblock title %} 
+
+{% block content %}
+    <h1>Say Hi To Django!</h1>
     <a href="/admin">Pannello admin</a>
     <br>
     <a href="{% url 'prima_app:index'%}">Vai all'indice</a>
-</body>
-</html>
+{% endblock content %}
