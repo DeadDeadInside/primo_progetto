@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+
+{% block title %} {{ block.super }} | Conteggio {% endblock title %} 
+
+{% block content %}
+    <script>
+        numeri = []
+        numMag = 0
+        for(var i = 0; i < 30; i++) {
+            numGen = random.randInt(1, 10)
+            numeri[i].append(numGen)
+            document.write(numGen)
+            if(numGen >=  7)
+                numMag = numMag + 1;
+        }
+    </script>
+    <b><i>Conteggio</i></b>
+
+    {% if numMag > 10 %}
+        <p style="color: green;">Positivo</p>
+    {% else %}
+        <p style="color: red;">Negativo</p>
+    {% endif %}
+{% endblock content %}

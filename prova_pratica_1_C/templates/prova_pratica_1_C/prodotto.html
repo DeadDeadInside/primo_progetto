@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+
+{% block title %} {{ block.super }} | Prodotto {% endblock title %} 
+
+{% block content %}
+    <script>
+        num1 = random.randInt(1,10)
+        num2 = random.randInt(1,10)
+        prodotto = num1 * num2
+    </script>
+    <p><i>Prodotto - Vedere logica</i></p>
+
+    {% if prodotto < 20 %}
+        <p style="color: red;">prodotto</p>
+    {% elif prodotto == 20 %}
+        <p style="color: black;">prodotto</p>
+    {% elif prodotto > 20 %}
+        <p style="color: green;">prodotto</p>
+    {% endif %}
+    
+{% endblock content %}

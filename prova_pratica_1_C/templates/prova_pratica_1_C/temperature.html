@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+
+{% block title %} {{ block.super }} | Temperature {% endblock title %} 
+
+{% block content %}
+    <p><i>Temperature</i></p>
+
+    <table>
+        <tr>
+            <td><p><i style="color: red;">Milano : 20C</i></p></td>
+        </tr>
+        <tr>
+            <td><p><i style="color: red;">Napoli : 21C</i></p></td>
+        </tr>
+        <tr>
+            <td><p><i style="color: blue;">Torino : 18C</i></p></td>
+        </tr>
+        <tr>
+            <td><p><i style="color: red;">Firenze : 23C</i></p></td>
+        </tr>
+        <tr>
+            <td><p><i style="color: blue;">Crotone : 19C</i></p></td>
+        </tr>
+    </table>
+{% endblock content %}

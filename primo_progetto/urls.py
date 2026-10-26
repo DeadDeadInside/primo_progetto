@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("prima_app.urls", namespace="prima_app")),
     path('', include("seconda_app.urls", namespace="seconda_app")),
+    path('', include("prova_pratica_1_C.urls", namespace="prova_pratica_1_C")),
     path('', index_root, name='index_root')
 ]
